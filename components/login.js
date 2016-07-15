@@ -55,7 +55,7 @@ class Login extends Component{
 			<View>
 				<TextInput placeholder={"Enter name"} onChangeText = {this.onTextChange.bind(this)} value={this.props.text}></TextInput>
 				<TextInput placeholder={"Enter password"} onChangeText = {this.onPasswordChange.bind(this)} value={this.props.passtext}></TextInput>
-				<Button onPress={this.onButtonPress.bind(this)}>Add</Button>
+				<Button onPress={this.onButtonPress.bind(this)}>Login</Button>
 
 				{ this.props.loggedIN ? <Text>{this.props.userx} is Logged IN </Text> :  <Text> Not logged in / Password Incorect</Text> }
 				
